@@ -1,0 +1,139 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.cat-image {
+  display: block; 
+  margin: 20px auto;
+  width: 300px; 
+  height: 200px; 
+  object-fit: cover; 
+}
+
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif; 
+}
+
+.attributes {
+  margin-bottom: 20px;
+}
+
+.attribute-button {
+  margin-right: 10px;
+  padding: 10px;
+  background-color: #FFC0CB;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.attribute-button:hover {
+  background-color: #FFB6C1;
+  color: #000;
+}
+
+.random-cat-button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #add8e6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.random-cat-button:hover {
+  background-color: #b0e0e6;
+  color: #000;
+}
+
+.cat-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+#root {
+  display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.main-content {
+  flex: 3; 
+  text-align: center;
+}
+
+.attributes, .random-cat-button, .cat-image {
+  flex: 1;
+}
+
+.ban-list {
+  flex: 1; 
+  max-height: 300px;
+  overflow-y: auto;
+  margin: 20px;
+  padding: 20px;
+  background: rgba(0,0,0,0.5);
+}
+
+.ban-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ban-list li {
+  background: #ff867c;
+  color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+}
